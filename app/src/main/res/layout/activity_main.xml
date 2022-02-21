@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/buttonzad"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Задание"
+        />
+
+
+    <Button
+        android:id="@+id/buttonvopr"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/buttonzad"
+        android:text="Вопросы"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="560sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+    <WebView
+        android:id="@+id/webviewhtml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <WebView
+        android:id="@+id/webviewhtml2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imgBtnPlay"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_playbutton" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPause"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_iconfinder_pause_stop_button_player_music_4593160_122283" />
+
+        <ImageButton
+            android:id="@+id/imgBtnStop"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_stop_button_icon_iconscom_72535" />
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/onBack"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/onMenu"
+
+        android:text="@string/button1" />
+
+    <Button
+        android:id="@+id/onMenu"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+        android:text="@string/button2" />
+
+    <Button
+        android:id="@+id/onNext"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/onMenu"
+        android:text="@string/button3" />
+
+
+
+</RelativeLayout>

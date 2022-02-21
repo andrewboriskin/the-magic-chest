@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Волшебный Сундучок</string>
+    <string name="button1">Назад</string>
+    <string name="button2">В меню</string>
+    <string name="button3">Вперед</string>
+    <string name="toast1">Показано первое задание</string>
+    <string name="zadanie">Прослушать задание</string>
+
+    </resources>
